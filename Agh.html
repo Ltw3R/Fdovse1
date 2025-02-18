@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fdovse</title>
+    <link rel="icon" type="image" href="Snoopy.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-size: 18px;
+            scroll-behavior: smooth;
+            position: relative;
+            text-align: center;
+            background: linear-gradient(45deg, #F7BAA0, #E5DACE, #B2B2A2, #6D7973, #3F3931);
+            background-size: 400% 400%;
+            animation: waveAnimation 12s ease infinite;
+            overflow: hidden;
+        }
+
+        @keyframes waveAnimation {
+            0% { background-position: 0% 0%; }
+            25% { background-position: 100% 0%; }
+            50% { background-position: 100% 100%; }
+            75% { background-position: 0% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Slide-up animation (for both image and text) */
+        @keyframes slideUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .content {
+            max-width: 700px;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 600;
+            color: #eaeaea;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .bio {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #ddd;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* New Next Page Button Style */
+        .next-page-button {
+            background-color: transparent;
+            color: #fff;
+            width: 9em;
+            height: 2.5em;
+            border: 0.2em solid #006c84;
+            border-radius: 14px;
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 1.5em;
+            transition: all 0.6s ease;
+            position: absolute;
+            bottom: 40px;
+            right: 20px;
+            font-size: 1.5rem;
+            z-index: 1;
+            animation: fadeIn 2.5s ease-out;
+        }
+
+        .next-page-button:hover {
+            background-color: #006c84;
+            cursor: pointer;
+        }
+
+        .next-page-button svg {
+            width: 1.6em;
+            margin-right: 0.8em;
+            transition: all 0.6s ease;
+        }
+
+        .next-page-button:hover svg {
+            transform: translateX(5px);
+        }
+
+        .text {
+            margin: 0 1.2em;
+            color: #fff;
+        }
+
+     
+        
+        .card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin: 20px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .card__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            border-radius: 10px; /* Adding rounded corners to the image */
+            animation: fadeIn 2s ease-out; /* Animation for the image */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Hi, I'M Zul</h1>
+        <div class="bio">
+            <p>Siswa SMKN 1 MARTAPURA jurusan Teknologi Jaringan Komputer dan Telekomunikasi.</p>
+        </div>
+    </div>
+
+    <!-- Card Section with Regular Image -->
+    <div class="card-container">
+        <div class="card">
+            <img src="kys duck.jpg" alt="Card Image" class="card__image">
+        </div>
+    </div>
+
+    <!-- Updated Next Page Button -->
+    <a href="Fdovase2.html">
+        <div class="next-page-button">
+            <span class="text">Next</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M7 7l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </div>
+    </a>
+
+</body>
+</html>
